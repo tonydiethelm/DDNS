@@ -109,7 +109,7 @@ async function updateNamesilo(domain){
 
 if(currentPublicIP != publicDNSIP){
     //email that there's a problem.
-    const title = "Your IP changed!";
+    const title = `Your IP for ${domainToCheck} changed!`;
     const message = `Your IP from your ISP is ${currentPublicIP} but your Domain Registrar thinks your IP is ${publicDNSIP}. Attempting to fix it.`
     sendAnEmail(title, message);
     /*
